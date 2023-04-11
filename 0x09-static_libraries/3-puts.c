@@ -1,10 +1,18 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - a program that prints a line with puts function
- * Return: 0 (success)
+ * _puts - print a string to stdout
+ * @str: char array string type
+ * Description: Can only use _putchar
  */
-int main(void)
+
+void _puts(char *str)
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
